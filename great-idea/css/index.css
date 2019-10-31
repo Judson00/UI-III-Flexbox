@@ -94,8 +94,8 @@ h1, h2, h3, h4, h5 {
 
 /* set background color for body */
 body{
-	background-color: black;
-	color: rgba(30, 255, 30, .75);
+	background-color: white;
+	color: black;
 }
 
 /* set styles for entire container */
@@ -103,7 +103,7 @@ body{
 	width: 1000px;
 	margin: 31px auto;
 	padding: 40px;
-	border: 3px solid red;
+	border: 3px solid black
 }
 
 /*set style for header, including nav, links, and logo*/
@@ -124,12 +124,12 @@ body{
 }
 
 .container header nav:hover{
-	background-color: rgba(30, 255, 30, .75)
+	background-color: lightgrey;
 }
 
 /* style for links in nav area */
 .container header nav a{ 
-	color: rgba(30, 255, 30, .75);
+	color: lightsteelblue;
 	text-decoration: none;
 	display:inline-block;
 	margin: 20px;
@@ -147,7 +147,7 @@ body{
 
 /* style for logo */
 .container header nav .logo{
-	background-color: rgba(30, 255, 30, .75);
+	background-color: yellow;
 	vertical-align: middle;
 	padding:20px;
 	margin-left: 80px;
