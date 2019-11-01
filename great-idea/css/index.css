@@ -297,7 +297,15 @@ footer .address{
 
 
 
-/* Services page style here....Nav style same, reused */
+/* Services page style here....*/
+
+.container header nav{
+	display: flex;
+	justify-content: space-evenly;
+	width: 90%;
+	align-items: center;
+	position: fixed;
+}
 
 /* sets style for entire container */
 .container-two{
@@ -306,7 +314,7 @@ footer .address{
 	border: 2px solid black;
 }
 
-/* style for header iamge, centers it */
+/* style for header image, centers it */
 .services-header-img{
 	display: flex;
 	justify-content: center;
@@ -335,12 +343,29 @@ footer .address{
 
 /* provides space between digital design and ux/ui */
 .topcolumn .digital{
-	margin: 0% 22% 0% 0%;
-	border:2px solid black;
+	margin: 0% 3% 0% -2%;
+	border:1px solid black;
+	background-color: #f0edef;
 }
 
+/* top column, ux/ui styles */
 .topcolumn .ux-ui{
-	border:2px solid black;
+	margin: 0% -3% 0% -1%;
+	border:1px solid black;
+	background-color: #f0edef;
+}
+
+/* style for all h2's in topcolumn */
+.topcolumn h2{
+	display: flex;
+	justify-content: flex-start;
+	margin: 3%;
+}
+
+/* style for all buttons in topcolumn */
+.topcolumn button{
+	margin: 2%;
+	padding: 1% 2% 1% 1%;
 }
 
 /* styling for middlecolumn (digital marketing, web development */
@@ -350,18 +375,33 @@ footer .address{
 	justify-content: center;
 	padding: 3% 12% 5% 12%;
 	justify-content: space-evenly;
-	
 }
 
 /* provides space between digital marketing and web development */
 .middlecolumn .digital-marketing{
-	margin: 0% 22% 0% 0%;
-	border:2px solid black;
-	
+	margin: 0% 3% 0% -2%;
+	border:1px solid black;
+	background-color: #f0edef;
 }
 
+/* style for middle column, web development */
 .middlecolumn .web-dev{
-	border:2px solid black;
+	margin: 0% -3% 0% -1%;
+	border:1px solid black;
+	background-color: #f0edef;
+}
+
+/* style for all h2's in middle column */
+.middlecolumn h2{
+	display: flex;
+	justify-content: flex-start;
+	margin: 3%;
+}
+
+/* style for all button's in middle column */
+.middlecolumn button{
+	margin: 2%;
+	padding: 1% 2% 1% 1%;
 }
 
 /* styling for bottom column, ios development, android development */
@@ -376,11 +416,109 @@ footer .address{
 
 /* provides space between ios development and android development */
 .bottomcolumn .ios-dev{
-	margin: 0% 22% 0% 0%;
-	border:2px solid black;
+	margin: 0% 3% 0% -2%;
+	border:1px solid black;
+	background-color: #f0edef;
 }
 
+/* styling for bottom column android development */
 .bottomcolumn .android-dev{
-	border:2px solid black;
+	margin: 0% -3% 0% -1%;
+	border:1px solid black;
+	background-color: #f0edef;
 }
 
+/* style for bottomw column h2's */
+.bottomcolumn h2{
+	display: flex;
+	justify-content: flex-start;
+	margin: 3%;
+}
+
+/* style for bottom column buttons */
+.bottomcolumn button{
+	margin: 2%;
+	padding: 1% 2% 1% 1%;
+}
+
+/* style for all paragraphs in main div */
+section .main div p{
+	text-align: justify;
+	line-height: 1.25em;
+	padding: 5%;
+}
+
+/* style for all footer */
+.footer{
+	display:flex;
+}
+
+/* style for all fact portion */
+.facts{
+	width:80%;
+	margin-left:10%;
+}
+
+/* style for all h2's in facts portion */
+.facts h2{
+	display: flex;
+	justify-content: flex-start;
+	width: 28%;
+}
+
+/* style fo all paragraphs in facts portion */
+.facts p{
+	display: flex;
+	justify-content: flex-start;
+	width: 28%;
+	margin-left:-1%
+}
+
+/* tried to style the ul */
+.list ul{
+	display: flex;
+	flex-direction: column;
+	margin-left:5%
+}
+
+/* tried to style the li */
+.list ul li{
+	padding-bottom: 1%;
+}
+
+/* @media commands, background changes color */
+@media (max-width: 769px) {
+	body{
+		background-color: rgb(182, 182, 247);
+	}
+
+	header nav a:first-child{
+		margin-left: 20px;
+	}
+
+	.hero-image{
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	body{
+		background-color: rgb(158, 231, 164);
+	}
+
+	header nav a:first-child{
+		margin-left: 10px;
+	}
+
+	.logo{
+		margin-left:0;
+	}
+
+	.hero-image{
+		display: none;
+	}
+
+	.box-container{
+		flex-direction: column;
+	}
+}
