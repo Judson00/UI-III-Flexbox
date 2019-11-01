@@ -100,36 +100,45 @@ body{
 
 /* set styles for entire container */
 .container{
-	width: 1000px;
-	margin: 31px auto;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
 	padding: 40px;
-	border: 3px solid black
+	min-width: 800px;
 }
+
+a{
+	color: #888;
+	text-decoration: none;
+}
+
+
 
 /*set style for header, including nav, links, and logo*/
 
 .container header{
-	width: 100%;
-	text-align: right;
-	margin-bottom: 40px;
-	margin-top: 10%;
+	display:flex;
+	justify-content:space-around;
+	margin-bottom: 20px;
 }
 
 /* style for nav area */
 .container header nav{
-	background-color: black;
-	position: fixed; 
-	top: -8px;
-	vertical-align: 0;
+	display:flex;
+	justify-content: space-evenly;
+	width: 100%;
+	align-items: center;
+	position:fixed;
 }
 
 .container header nav:hover{
-	background-color: lightgrey;
+	color:#000000;
+	background-color: #d6d6d6;
 }
 
 /* style for links in nav area */
 .container header nav a{ 
-	color: lightsteelblue;
+	color: #9dbec9;
 	text-decoration: none;
 	display:inline-block;
 	margin: 20px;
@@ -147,34 +156,36 @@ body{
 
 /* style for logo */
 .container header nav .logo{
-	background-color: yellow;
+	background-color: white;
 	vertical-align: middle;
 	padding:20px;
 	margin-left: 80px;
 }
 
+.container header nav .logo:hover{
+	background-color: yellow;
+	margin-left: 30px;
+}
+
 /*Set styles for marketing-banner*/
 section.marketing-banner{
-	border-bottom: 1px solid black;
-	padding-bottom: 50px;
-	margin: 24px 0;
+	margin: 40px 0;
+	display: flex;
+	justify-content:space-around;
 }
 
 /* styling innovation, on, and demand along with the button */
 section div.innovation{
-	width:50%;
-	display: inline-block;
 	text-align: center;
-	vertical-align: top;
-	height: 100%;
 	padding: 40px;
-	margin-right: 70px;
 }
 
 /* styles for Innovation On and Demand (they are in span elements) */
 div.innovation h1 span{
-	font-size: 40px;
-	display:block;
+	font-size: 72px;
+	line-height: 72px;
+	display:flex;
+	justify-content: flex;
 }
 
 /* styling for the button */
@@ -189,18 +200,19 @@ section .header-image{
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
+	padding:1%;
 }
 
 /* styles for content-top */
 section.content-top{
 	width: 100%;
-	padding: 20px;
 }
 
 /* styling for the paragraphs in content-top (feature and about) */
 section div p{
 	text-align:justify;
 	line-height: 1.25em;
+	padding:20px;
 }
 
 /* styling for divs in content top (feature and about divs) */
@@ -211,43 +223,45 @@ section.content-top div{
 
 /* styling for first-child (feature) */
 section.content-top div:first-child{
-	margin-right: 40px;}
+	margin-right: 40px;
+}
 
 /* styling for mid-page-accent pic */
 .mid-page-accent{
 	width: 100%;
 	border-radius: 30%;
+	height:25%;
+	width:100%;
 }
 
 
 /* styling for content-bottom (services product, vision) */
-section.content-bottom{
-	width: 100%;
-	border-bottom:1px solid black;
-	padding-bottom: 30px
+section.content-bottom {
+    width: 100%;
+    border-bottom: 1px solid black;
+	padding-bottom: 30px;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 /* styling for content-bottom divs (service, product, vision) */
 section.content-bottom div{
-	width: 30%;
-	margin-right: 20px;
-	display: inline-block;
+	margin-right:30px;
 	padding: 20px;
 }
 
 section.content-bottom div h2{
-	margin-top: 20px;
+	margin-right:30px;
 }
 
 /* styling for content-bottom last child (service) */
 section.content-bottom div:last-child{
-	margin-right: 40px;
+	margin-right: 0;
 }
 
 /* styling for content-bottom paragraphs (service, product, vision) */
 section.content-bottom div p{
 	text-align: justify;
-	display: inline-block;
 }
 
 /* styling for footer section*/
@@ -258,14 +272,13 @@ footer{
 
 /* styling for copyright */
 footer div.copyright{
-	padding: 0 0 40px 0;
+	padding: 20px 0 40px 0;
 	text-align: center;
 }
 
 /* styling for contact info */
 footer div.contact{
 	width: 200px;
-	padding: 130px 0;
 }
 
 /* styling for contact info (strong elements (address, phone, email)) */
