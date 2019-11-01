@@ -454,7 +454,7 @@ section .main div p{
 }
 
 /* style for all fact portion */
-.facts{
+.footer .facts{
 	width:80%;
 	margin-left:10%;
 }
@@ -474,6 +474,12 @@ section .main div p{
 	margin-left:-1%
 }
 
+.list{
+	display:flex;
+	justify-content: flex-start;
+	margin-left: 3%;
+}
+
 /* tried to style the ul */
 .list ul{
 	display: flex;
@@ -482,8 +488,21 @@ section .main div p{
 }
 
 /* tried to style the li */
-.list ul li{
-	padding-bottom: 1%;
+.list li{
+	padding: 15% 0 15% 0;
+}
+
+.footer img{
+	display: flex;
+	justify-content: flex-end;
+	height: 62%;
+	width:43%;
+}
+
+.copyright2{
+	display: flex;
+	justify-content: center;
+	text-align: center;
 }
 
 /* @media commands, background changes color */
