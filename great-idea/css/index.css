@@ -295,3 +295,92 @@ footer .address{
 
 
 
+
+
+/* Services page style here....Nav style same, reused */
+
+/* sets style for entire container */
+.container-two{
+	display: flex;
+	justify-content: space-evenly;
+	border: 2px solid black;
+}
+
+/* style for header iamge, centers it */
+.services-header-img{
+	display: flex;
+	justify-content: center;
+	padding: 3% 10% 2% 10%;
+}
+
+/* centers entire services header */
+.servicesHeader{
+	width: 90%;
+	padding: 2% 0% 3% 10%;
+}
+
+/* increase font size for serviceHeader h1 */
+.serviceHeader h1{
+	font-size: 40px;
+}
+
+/* sets style for topcolumn (digital design, and ux/ui */
+.topcolumn{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding: 3% 12% 5% 12%;
+	justify-content: space-evenly;
+}
+
+/* provides space between digital design and ux/ui */
+.topcolumn .digital{
+	margin: 0% 22% 0% 0%;
+	border:2px solid black;
+}
+
+.topcolumn .ux-ui{
+	border:2px solid black;
+}
+
+/* styling for middlecolumn (digital marketing, web development */
+.middlecolumn{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding: 3% 12% 5% 12%;
+	justify-content: space-evenly;
+	
+}
+
+/* provides space between digital marketing and web development */
+.middlecolumn .digital-marketing{
+	margin: 0% 22% 0% 0%;
+	border:2px solid black;
+	
+}
+
+.middlecolumn .web-dev{
+	border:2px solid black;
+}
+
+/* styling for bottom column, ios development, android development */
+.bottomcolumn{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding: 3% 12% 5% 12%;
+	justify-content: space-evenly;
+}
+
+
+/* provides space between ios development and android development */
+.bottomcolumn .ios-dev{
+	margin: 0% 22% 0% 0%;
+	border:2px solid black;
+}
+
+.bottomcolumn .android-dev{
+	border:2px solid black;
+}
+
